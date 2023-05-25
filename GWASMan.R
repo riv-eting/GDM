@@ -19,7 +19,7 @@ library(dplyr)
 #paste function to concatenate filenames/paths
 "%&%" = function(a,b) paste(a,b,sep="")
 #paths to gwas sumstat files
-data.dir <- "/home/vir/TypeII/"
+data.dir <- "/home/vir/Diabetes/TypeII/"
 T2 <- data.dir %&% "phecode-250.2-both_sexes.tsv.bgz"
 ## command to read in a .bgz zipped file
 gwas <- fread(cmd="zcat " %&% T2)
